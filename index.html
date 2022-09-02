@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Kanit:wght@700&family=Nunito:wght@200&family=Varela+Round&display=swap"
       rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-teal-700 dark:bg-slate-900">
     <div class="container">
       <div class="flex justify-center text-center items-center">
         <div class="mt-10 justify-center items-center text-center">
@@ -22,27 +22,61 @@
       </div>
     </div>
     <div class="container">
-      <h1 class="text-putih text-center mt-10 font-font1 text-5xl">M H R P</h1>
-      <h2 class="text-putih text-center font-font3 text-3xl">Mh_ProCode.</h2>
-      <h2 class="text-putih text-center font-font3 font-bold text-2xl">
+      <h1
+        class="text-putih dark:text-secondary text-center mt-10 font-font1 text-5xl">
+        M H R P
+      </h1>
+      <h2
+        class="text-putih dark:text-secondary text-center font-font3 text-3xl">
+        Mh_ProCode.
+      </h2>
+      <h2
+        class="text-putih text-center font-font3 font-bold text-2xl dark:text-secondary">
         About
       </h2>
-      <h3 class="text-putih text-center font-font3 font-bold text-xl">
-        Aplikasi informasi dan fitur-fitur
+      <h3
+        class="text-putih dark:text-secondary text-center font-font3 font-bold text-xl">
+        Application Information And Features
       </h3>
     </div>
+    <!-- btn dark mode -->
+    <div class="mt-2 flex gap-1 items-center justify-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-6 h-6 text-teal-300 dark:text-slate-200">
+        <path
+          d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+      </svg>
+      <button class="w-10 h-5 p-0.5 rounded-full bg-teal-300 dark:bg-secondary">
+        <div
+          class="w-4 h-4 transition-all rounded-full bg-white dark:bg-gray-800 dark:translate-x-5"></div>
+      </button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-6 h-6 text-teal-300 dark:text-slate-200">
+        <path
+          fill-rule="evenodd"
+          d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <!-- End dark mode -->
     <!-- isi -->
     <div
       class="mt-7 container flex flex-wrap text-center justify-center items-center">
       <!-- content -->
-      <div class="bg-putih w-44 h-44 rounded-lg m-3">
+      <div class="bg-putih dark:bg-slate-400 w-44 h-44 rounded-lg m-3">
         <div class="flex flex-wrap justify-center">
           <img
             class="mt-2 w-28 h-28"
             src="https://visualpharm.com/assets/406/Manager-595b40b65ba036ed117d2f62.svg"
             alt="" />
         </div>
-        <p class="font-font3 font-bold text-lg">Portfolio</p>
+        <p class="font-font3 font-bold text-lg dark:text-white">Portfolio</p>
         <a
           target="_blank"
           class="font-font3 text-link font-bold"
@@ -50,14 +84,14 @@
           >Selengkapnya.</a
         >
       </div>
-      <div class="bg-putih w-44 h-44 rounded-lg m-3">
+      <div class="bg-putih dark:bg-slate-400 w-44 h-44 rounded-lg m-3">
         <div class="flex flex-wrap justify-center">
           <img
             class="mt-2 w-28 h-28"
             src="https://visualpharm.com/assets/988/QR%20Code-595b40b65ba036ed117d4547.svg"
             alt="" />
         </div>
-        <p class="font-font3 font-bold text-lg">Code QR</p>
+        <p class="font-font3 font-bold text-lg dark:text-white">Code QR</p>
         <a
           target="_blank"
           class="font-font3 text-link font-bold"
@@ -65,14 +99,16 @@
           >Selengkapnya.</a
         >
       </div>
-      <div class="bg-putih w-44 h-44 rounded-lg m-3">
+      <div class="bg-putih dark:bg-slate-400 w-44 h-44 rounded-lg m-3">
         <div class="flex flex-wrap justify-center">
           <img
             class="mt-2 w-28 h-28"
             src="https://visualpharm.com/assets/828/Password-595b40b65ba036ed117d450e.svg"
             alt="" />
         </div>
-        <p class="font-font3 font-bold text-lg">Password Generator</p>
+        <p class="font-font3 font-bold text-lg dark:text-white">
+          Password Generator
+        </p>
         <a
           target="_blank"
           class="font-font3 text-link font-bold"
@@ -80,14 +116,14 @@
           >Selengkapnya.</a
         >
       </div>
-      <div class="bg-putih w-44 h-44 rounded-lg m-3">
+      <div class="bg-putih w-44 dark:bg-slate-400 h-44 rounded-lg m-3">
         <div class="flex flex-wrap justify-center">
           <img
             class="mt-2 w-28 h-28"
             src="https://visualpharm.com/assets/80/Calculator-595b40b65ba036ed117d433f.svg"
             alt="" />
         </div>
-        <p class="font-font3 font-bold text-lg">Calculator</p>
+        <p class="font-font3 font-bold text-lg dark:text-white">Calculator</p>
         <a
           target="_blank"
           class="font-font3 text-link font-bold"
@@ -95,14 +131,14 @@
           >Selengkapnya.</a
         >
       </div>
-      <div class="bg-putih w-44 h-44 rounded-lg m-3">
+      <div class="bg-putih dark:bg-slate-400 w-44 h-44 rounded-lg m-3">
         <div class="flex flex-wrap justify-center">
           <img
             class="mt-2 w-28 h-28"
             src="https://visualpharm.com/assets/720/Github-595b40b65ba036ed117d442f.svg"
             alt="" />
         </div>
-        <p class="font-font3 font-bold text-lg">Git Hub</p>
+        <p class="font-font3 font-bold text-lg dark:text-white">Git Hub</p>
         <a
           target="_blank"
           class="font-font3 text-link font-bold"
@@ -110,14 +146,16 @@
           >Selengkapnya.</a
         >
       </div>
-      <div class="bg-putih w-44 h-44 rounded-lg m-3">
+      <div class="bg-putih dark:bg-slate-400 w-44 h-44 rounded-lg m-3">
         <div class="flex flex-wrap justify-center">
           <img
             class="mt-2 w-28 h-28"
             src="https://visualpharm.com/assets/891/Whatsapp-595b40b65ba036ed117d4648.svg"
             alt="" />
         </div>
-        <p class="font-font3 font-bold text-lg">Contact Whatsapp</p>
+        <p class="font-font3 font-bold text-lg dark:text-white">
+          Contact Whatsapp
+        </p>
         <a
           target="_blank"
           class="font-font3 text-link font-bold"
@@ -125,14 +163,16 @@
           >Selengkapnya.</a
         >
       </div>
-      <div class="bg-putih w-44 h-44 rounded-lg m-3">
+      <div class="bg-putih dark:bg-slate-400 w-44 h-44 rounded-lg m-3">
         <div class="flex flex-wrap justify-center">
           <img
             class="mt-2 w-28 h-28"
             src="https://visualpharm.com/assets/954/System%20Task-595b40b65ba036ed117d45e3.svg"
             alt="" />
         </div>
-        <p class="font-font3 font-bold text-ml">Informasi Radar Bromo</p>
+        <p class="font-font3 font-bold text-ml dark:text-white">
+          Informasi Radar Bromo
+        </p>
         <a
           target="_blank"
           class="font-font3 text-link font-bold"
@@ -144,7 +184,7 @@
     </div>
     <!-- pesan Start -->
 
-    <section class="mt-2 bg-slatee pt-36 pb-32">
+    <section class="mt-2 bg-slatee dark:bg-gray-900 pt-36 pb-32">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
@@ -160,8 +200,8 @@
               Web Informasi ini akan selalu Update.
             </p>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Jika Anda memiliki Kritik atau saran bagi Saya lansung hubungi
-              lewat sosmed yang ada di website ini
+              Jika Anda memiliki Kritik atau saran bagi Saya bisa lansung
+              hubungi lewat sosial Media yang ada di website ini
             </p>
             <p class="text-xl font-medium text-secondary md:text-lg">
               Terima Kasih.
@@ -174,7 +214,7 @@
       </div>
       <!-- footer -->
       <div class="w-full border-t border-secondary pt-10">
-        <div class="mb-5 flex items-center justify-center">
+        <div class="mb-5 flex items-center dark:text-secondary justify-center">
           <!-- youtube -->
           <a
             href="https://www.youtube.com/channel/UCOvhaCTftojD9M2u1AAkAnw"
@@ -288,5 +328,6 @@
       <!-- End Footer -->
     </section>
     <!-- End Pesan -->
+    <script src="dist/js/script.js"></script>
   </body>
 </html>
