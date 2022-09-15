@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, Maximum-scale=1," />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon" />
+    <title>QRcode-mh</title>
+  </head>
+  <body style="background-color: #5eead4">
+    <center>
+      <div
+        style="
+          display: block;
+          padding-bottom: 50px;
+          margin-top: 15px;
+          width: 400px;
+          height: auto;
+          text-align: center;
+          display: block;
+          background: #ffffff21;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+        ">
+        <div
+          style="
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          ">
+          <canvas
+            width="100"
+            height="100"
+            style="
+              border: 4px solid black;
+              margin-top: 50px;
+              border-radius: 10px;
+            "
+            id="canvas"></canvas>
+          <h2 style="margin-top: 10px; font-size: 20px; color: black">
+            QRCode Generator 🌤
+          </h2>
+          <input
+            style="
+              height: 30px;
+              width: 300px;
+              border: 2px solid black;
+              border-radius: 7px;
+            "
+            placeholder="ketik lalu enter"
+            id="qrInput"
+            onchange="generateQR()" />
+          <label
+            style="margin-top: 10px; margin-bottom: 10px; text-align: center"
+            >Instructions: type the word/link you want to follow CodeQR and
+            press enter to display codeQR results</label
+          >
+          <span style="margin-top: 10px">@Mh_ProCode</span>
+        </div>
+      </div>
+    </center>
+    <script src="qrcode/build/qrcode.js"></script>
+    <script>
+      function generateQR() {
+        let canvas = document.getElementById("canvas");
+        let qrInput = document.getElementById("qrInput");
+        QRCode.toCanvas(canvas, qrInput.value, (err) => {
+          if (err) console.error(err);
+          console.log("scan berhasil");
+        });
+      }
+    </script>
+  </body>
+</html>

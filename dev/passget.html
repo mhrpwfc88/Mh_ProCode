@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, Maximum-scale=1," />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon" />
+    <title>Get-Pw-Mh</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+  </head>
+  <body class="bg-info">
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100">
+      <div class="d-flex flex-column">
+        <h1>PASSWORD GENERATOR</h1>
+        <div class="d-flex flex-column gap-2">
+          <label for="passwordlength" class="text-uppercase fw-bold"
+            >Panjang Password</label
+          >
+          <input
+            class="form-control form-control-lg"
+            type="number"
+            id="passwordLength" />
+          <label for="password" class="text-uppercase fw-bold">Password</label>
+          <input class="form-control form-control-lg" disabled id="password" />
+          <button
+            class="btn btn-dark text-uppercase btn-lg mt-2 fw-bold"
+            onclick="getPassword()">
+            Generate password
+          </button>
+          <a
+            class="btn btn-warning text-uppercase btn-lg mt-2 fw-bold"
+            id="saveButton"
+            onclick="savePassword()"
+            >Save Password</a
+          >
+          <p class="text-center">@mh_ProCode</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/pw.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
