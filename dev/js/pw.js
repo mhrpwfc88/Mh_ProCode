@@ -13,7 +13,6 @@ const generatePassword = (len) => {
     for (let index = 0; index < len; index++) {
         generator += data[~~(Math.random() * data.length)];
     }
-
     return generator
 }
 
