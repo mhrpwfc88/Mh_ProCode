@@ -751,11 +751,6 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
 .bg-purple-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
@@ -800,10 +795,6 @@ video {
 
 .font-font3 {
   font-family: Nunito;
-}
-
-.font-primary {
-  font-family: Varela Round;
 }
 
 .text-5xl {
